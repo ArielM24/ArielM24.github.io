@@ -24,16 +24,12 @@ class ConnectWidget extends StatelessWidget {
             SizedBox(width: 10,),
             SocialMediaButton(text: "Instagram", iconData: FontAwesomeIcons.instagram, iconBackgroundColor: Colors.pink,onPressed: (){},),
             SizedBox(width: 10,),
-
-            SocialMediaButton(text: "X/Twitter", iconData: FontAwesomeIcons.twitter, iconBackgroundColor: Colors.black,onPressed: (){},),
+            SocialMediaButton(text: "X/Twitter", iconData: FontAwesomeIcons.xTwitter, iconBackgroundColor: Colors.black,onPressed: (){},),
             SizedBox(width: 10,),
-
             SocialMediaButton(text: "TikTok", iconData: FontAwesomeIcons.tiktok, iconBackgroundColor: Colors.black,onPressed: (){},),
             SizedBox(width: 10,),
-            
             SocialMediaButton(text: "YouTube", iconData: FontAwesomeIcons.youtube, iconBackgroundColor: Colors.red,onPressed: (){},),
             SizedBox(width: 10,),
-            
             SocialMediaButton(text: "Discord", iconData: FontAwesomeIcons.discord, iconBackgroundColor: const Color.fromARGB(255, 86, 106, 246),onPressed: (){},),
           ],),
           SizedBox(height: 20,),
