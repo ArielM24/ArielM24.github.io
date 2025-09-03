@@ -1,7 +1,8 @@
+import 'package:extremebreaker1/home/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Home());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Extremebreaker1',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Extremebreaker1'),
     );
   }
 }
@@ -56,19 +57,59 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+      body: Container(
+        color: const Color.fromARGB(255, 200, 184, 244),
+        child: ListView(
+          children: [
+           Container(
+            padding: EdgeInsets.all(50),
+            child: Row(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("✨ Partnered Twitch Streamer"),
+                    SizedBox(height: 20,),
+                    Text("Hello, I'm extremebreaker1"),
+                    SizedBox(height: 20,),
+                    SizedBox(
+                      width: 600,
+                      child: Text("A partnered Twitch streamer and variety gaming content creator. I love creating high-energy, interactive content filled with funny moments and \"professional\" gameplay, making every stream and video an experience for my community. I'm always excited to collaborate with brands in creative ways that bring value to my audience while keeping things fun and authentic.",
+                      maxLines: 6,
+                      overflow: TextOverflow.ellipsis,),
+                    ),
+                    SizedBox(height: 20,),
+                    SizedBox(width: 600,
+                    child: Row(
+                      children: [
+                        ElevatedButton(onPressed: (){}, child: Text("Watch Live")),
+                        SizedBox(width: 20,),
+                        ElevatedButton(onPressed: (){}, child: Text("Support Me")),
+                        SizedBox(width: 20,),
+                        ElevatedButton(onPressed: (){}, child: Text("Collaborate")),
+                      ],
+                    ),)
+                  ],
+                ),
+                SizedBox(width: 250,),
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(350),
+                    border: Border.all(color:Colors.red)
+                  ),
+                  child: ClipOval(
+                    clipBehavior: Clip.antiAlias,
+                    child: Image.network(
+                      "https://static-cdn.jtvnw.net/jtv_user_pictures/c1ab3a94-1208-4690-95b9-beb3da056ad1-profile_image-70x70.png",
+                      fit: BoxFit.cover,
+                      height: 350,
+                      width: 350,
+                      ),
+                  ))
+
+              ],
             ),
+           ), 
           ],
         ),
       ),
