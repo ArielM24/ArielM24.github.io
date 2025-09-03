@@ -1,4 +1,5 @@
-import 'package:extremebreaker1/home/sections/description/description_widget.dart';
+import 'package:extremebreaker1/home/sections/connect_with_me/connect_widget.dart';
+import 'package:extremebreaker1/home/sections/profile_description/description_widget.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -15,8 +16,6 @@ class Home extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(gradient: LinearGradient(colors: [
             const Color.fromARGB(255, 197, 218, 255),
-           
-
             const Color.fromARGB(255, 233, 213, 255),
           ])),
           
@@ -25,6 +24,8 @@ class Home extends StatelessWidget {
             child: Column(
               children: [
                 DescriptionWidget(),
+                SizedBox(height: 100,),
+                ConnectWidget(),
               ],
             ))]),
 
