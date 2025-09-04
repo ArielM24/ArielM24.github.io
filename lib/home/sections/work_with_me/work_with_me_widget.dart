@@ -1,5 +1,6 @@
 import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:extremebreaker1/home/sections/work_with_me/widgets/card_content.dart';
+import 'package:extremebreaker1/home/sections/work_with_me/widgets/collaboration_types.dart';
 import 'package:extremebreaker1/home/widgets/section_text.dart';
 import 'package:flutter/material.dart';
 
@@ -38,6 +39,7 @@ class WorkWithMeWidget extends StatelessWidget {
                   ),
                 ),
                 CardContent(),
+                CollaborationTypes(),
               ],
             ),
           ),
