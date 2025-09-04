@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:flutter/material.dart';
 
 class RoundedButton extends StatelessWidget {
@@ -28,12 +29,12 @@ class RoundedButton extends StatelessWidget {
               alignment: WrapAlignment.center,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                Icon(iconData, color: Colors.deepPurple),
+                Icon(iconData, color: ThemeConstants.primaryTextColor),
                 SizedBox(width: 10),
                 Text(
                   text,
                   style: TextStyle(
-                    color: Colors.deepPurple,
+                    color: ThemeConstants.primaryTextColor,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

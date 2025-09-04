@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:flutter/material.dart';
 
 class SocialMediaButton extends StatefulWidget {
@@ -59,7 +60,7 @@ class _SocialMediaButtonState extends State<SocialMediaButton> {
                       ),
                     ),
                     SizedBox(height: 8,),
-                    Text(widget.text, style: TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold, fontSize: 16),)
+                    Text(widget.text, style: TextStyle(color: ThemeConstants.primaryTextColor, fontWeight: FontWeight.bold, fontSize: 16),)
                   ],
                 ),
               ),

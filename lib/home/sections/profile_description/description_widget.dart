@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:extremebreaker1/home/sections/profile_description/widgets/description_buttons.dart';
 import 'package:extremebreaker1/home/sections/profile_description/widgets/description_text.dart';
 import 'package:extremebreaker1/home/sections/profile_description/widgets/profile_picture.dart';
@@ -15,7 +16,7 @@ class DescriptionWidget extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    RoundedText(text: "✨ Partnered Twitch Streamer", color: const Color.fromARGB(255, 215, 229, 255), textColor: const Color.fromARGB(255, 153, 34, 174)),
+                    RoundedText(text: "✨ Partnered Twitch Streamer", color: ThemeConstants.flatBackgroundColor, textColor: ThemeConstants.terciaryTextColor),
                     SizedBox(height: 20,),
                     TitleText(),
                     SizedBox(height: 20,),

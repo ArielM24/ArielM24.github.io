@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:extremebreaker1/home/widgets/gradient_button.dart';
 import 'package:flutter/material.dart';
 
@@ -11,10 +12,10 @@ class DescriptionButtons extends StatelessWidget {
         GradientButton(
           onPressed: () {},
           iconData: Icons.play_circle_outline_rounded,
-          iconColor: Colors.white,
+          iconColor: ThemeConstants.secondaryBackgroundColor,
           text: "Watch Live",
-          gradientColors: [Colors.purpleAccent, Colors.deepPurple],
-          textColor: Colors.white,
+          gradientColors: ThemeConstants.mainGradientColors,
+          textColor: ThemeConstants.secondaryBackgroundColor,
         ),
         SizedBox(width: 20),
         GradientButton(

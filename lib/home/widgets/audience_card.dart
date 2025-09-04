@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:flutter/material.dart';
 
 class AudienceCard extends StatelessWidget {
@@ -40,7 +41,7 @@ class AudienceCard extends StatelessWidget {
                   SizedBox(width: 10),
                   Text(
                     iconText,
-                    style: TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold, fontSize: 18),
+                    style: TextStyle(color: ThemeConstants.primaryTextColor, fontWeight: FontWeight.bold, fontSize: 18),
                   ),
                 ],
               ),
@@ -55,11 +56,11 @@ class AudienceCard extends StatelessWidget {
                     children: [
                       Text(
                         stat1,
-                        style: TextStyle(color: Colors.deepPurpleAccent, fontSize: 16),
+                        style: TextStyle(color: ThemeConstants.secondaryTextColor, fontSize: 16),
                       ),
                       Text(
                         stat1Number,
-                        style: TextStyle(color: Colors.deepPurple, fontSize: 18, fontWeight: FontWeight.bold),
+                        style: TextStyle(color: ThemeConstants.primaryTextColor, fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -70,11 +71,11 @@ class AudienceCard extends StatelessWidget {
                       children: [
                         Text(
                           stat2,
-                          style: TextStyle(color: Colors.deepPurpleAccent, fontSize: 16),
+                          style: TextStyle(color: ThemeConstants.secondaryTextColor, fontSize: 16),
                         ),
                         Text(
                           stat2Number,
-                          style: TextStyle(color: Colors.deepPurple, fontSize: 18, fontWeight: FontWeight.bold),
+                          style: TextStyle(color: ThemeConstants.primaryTextColor, fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),

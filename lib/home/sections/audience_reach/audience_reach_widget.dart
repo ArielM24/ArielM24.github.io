@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:extremebreaker1/home/widgets/audience_card.dart';
 import 'package:extremebreaker1/home/widgets/section_text.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class AudienceReachWidget extends StatelessWidget {
                 stat1Number: "12K+",
                 stat2: "CCV*",
                 stat2Number: "125+",
-                iconColor: Colors.deepPurpleAccent,
+                iconColor: ThemeConstants.secondaryTextColor,
               ),
               SizedBox(width: 10),
               AudienceCard(
@@ -61,7 +62,7 @@ class AudienceReachWidget extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
-          Text("* last 30 days", style: TextStyle(color: Colors.deepPurple)),
+          Text("* last 30 days", style: TextStyle(color: ThemeConstants.primaryTextColor)),
         ],
       ),
     );

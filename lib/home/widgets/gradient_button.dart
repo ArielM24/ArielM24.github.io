@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
@@ -11,18 +12,15 @@ class GradientButton extends StatelessWidget {
   final FontWeight fontWeight;
   const GradientButton({
     super.key,
-    this.gradientColors = const [
-      Color.fromARGB(255, 231, 236, 255),
-      Color.fromARGB(255, 231, 236, 255),
-    ],
-    this.textColor = const Color.fromARGB(255, 104, 17, 120),
-    this.borderColor = const Color.fromARGB(255, 242, 136, 171),
+   this.gradientColors = const [ThemeConstants.secondaryBackgroundColor, ThemeConstants.secondaryBackgroundColor],
+    this.textColor = ThemeConstants.primaryTextColor,
+    this.borderColor = ThemeConstants.buttonBorderColor,
     required this.onPressed,
     required this.iconData,
-    this.iconColor = const Color.fromARGB(255, 104, 17, 120),
+    this.iconColor = ThemeConstants.primaryTextColor,
     required this.text,
     this.fontWeight = FontWeight.normal,
-  });
+  }) ;
 
   @override
   Widget build(BuildContext context) {
