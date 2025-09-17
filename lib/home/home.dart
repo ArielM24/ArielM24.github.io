@@ -6,6 +6,8 @@ import 'package:extremebreaker1/home/sections/work_with_me/work_with_me_widget.d
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
+  static const _sidePaddingProportion = 0.1;
+  static const _topPaddingProportion = 0.1;
   const Home({super.key});
 
   @override
@@ -16,7 +18,7 @@ class Home extends StatelessWidget {
         body: Container(
           decoration: BoxDecoration(gradient: LinearGradient(colors: ThemeConstants.backgroundGradientColors)),
           child: ListView(children: [Container(
-            padding: EdgeInsets.only(top: 90, left: 260, right: 260),
+            padding: EdgeInsets.only(top: MediaQuery.sizeOf(context).height*_topPaddingProportion, left: MediaQuery.sizeOf(context).width*_sidePaddingProportion, right: MediaQuery.sizeOf(context).width*_sidePaddingProportion),
             child: Column(
               children: [
                 DescriptionWidget(),

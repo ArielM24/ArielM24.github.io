@@ -6,7 +6,10 @@ class TitleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RichText(text: TextSpan(
+    return RichText(
+      maxLines: 1,
+      overflow: TextOverflow.ellipsis,
+      text: TextSpan(
       text: "Hello, I'm ",
       style: TextStyle(color: ThemeConstants.primaryTextColor, fontSize: 48, fontWeight: FontWeight.bold),
       children: [

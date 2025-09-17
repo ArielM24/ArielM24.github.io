@@ -16,7 +16,7 @@ class RoundedText extends StatelessWidget {
     ),
     child: Padding(
       padding: padding,
-      child: Text(text, style: TextStyle(color: textColor, fontWeight: FontWeight.bold),),
+      child: Text(text, maxLines: 1,overflow:  TextOverflow.ellipsis,style: TextStyle(color: textColor, fontWeight: FontWeight.bold),),
     ),);
   }
 }
