@@ -1,3 +1,4 @@
+import 'package:extremebreaker1/constants/devices_constants.dart';
 import 'package:extremebreaker1/constants/theme_constants.dart';
 import 'package:extremebreaker1/home/sections/audience_reach/audience_reach_widget.dart';
 import 'package:extremebreaker1/home/sections/connect_with_me/connect_widget.dart';
@@ -16,21 +17,40 @@ class Home extends StatelessWidget {
       title: 'Extremebreaker1',
       home: Scaffold(
         body: Container(
-          decoration: BoxDecoration(gradient: LinearGradient(colors: ThemeConstants.backgroundGradientColors)),
-          child: ListView(children: [Container(
-            padding: EdgeInsets.only(top: MediaQuery.sizeOf(context).height*_topPaddingProportion, left: MediaQuery.sizeOf(context).width*_sidePaddingProportion, right: MediaQuery.sizeOf(context).width*_sidePaddingProportion),
-            child: Column(
-              children: [
-                DescriptionWidget(),
-                SizedBox(height: 100,),
-                ConnectWidget(),
-                SizedBox(height: 100,),
-                AudienceReachWidget(),
-                SizedBox(height: 100,),
-                WorkWithMeWidget()
-              ],
-            ))]),
-
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: ThemeConstants.backgroundGradientColors,
+            ),
+          ),
+          padding: EdgeInsets.only(
+                  top:
+                      DevicesConstants.mainTopPadding(context),
+                  left:
+                       DevicesConstants.mainSidePadding(context),
+                  right:
+                       DevicesConstants.mainSidePadding(context),
+                ),
+          child: ListView(
+            children: [
+              Column(
+                children: [
+                  DescriptionWidget(),
+                  SizedBox(
+                    height: DevicesConstants.mainVerticalSeparation(context),
+                  ),
+                  // ConnectWidget(),
+                  // SizedBox(
+                  //   height: DevicesConstants.mainVerticalSeparation(context),
+                  // ),
+                  // AudienceReachWidget(),
+                  // SizedBox(
+                  //   height: DevicesConstants.mainVerticalSeparation(context),
+                  // ),
+                  // WorkWithMeWidget(),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -19,4 +19,6 @@ class ThemeConstants {
   static const Color discordColor =  Color.fromARGB(255, 86, 106, 246);
   static const Color flatBackgroundColor =  Color.fromARGB(255, 215, 229, 255);
   static const Color deactivatedColor = Color.fromARGB(255, 107, 129, 141);
+  static const Color pictureBorderColor = Color.fromARGB(255, 254, 234, 233);
+  static const Color pictureShadowColor =  Color.fromARGB(255, 230, 183, 180);
 }
